@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruithub/screen/home.dart';
 
 class authentication extends StatefulWidget {
   const authentication({super.key});
@@ -58,20 +59,32 @@ class _authenticationState extends State<authentication> {
                       ],
                     ),
                   ),
-                  Container(
-                    width: double.infinity,
-                    height: 56,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color(0xffe16b6b),
-                    ),
-                    child: Center(
-                      child: Text("Let’s Continue",
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => home(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xffe16b6b),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Let’s Continue",
                           style: TextStyle(
                             fontSize: 16,
                             color: Colors.white,
                             fontWeight: FontWeight.w500,
-                          )),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],

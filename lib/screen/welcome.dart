@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruithub/screen/authentication.dart';
 
 class welcome extends StatefulWidget {
   const welcome({super.key});
@@ -61,7 +62,7 @@ class _welcomeState extends State<welcome> {
                             child: Text(
                               "We deliver the best and freshest fruit salad in town. Order for a combo today!!!",
                               style: TextStyle(
-                                color: Color(0xff5D577E),
+                                color: Color.fromARGB(255, 36, 34, 49),
                                 fontSize: 16,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -71,20 +72,30 @@ class _welcomeState extends State<welcome> {
                       ],
                     ),
                   ),
-                  Container(
-                    width: double.infinity,
-                    height: 56,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Color(0xffe16b6b),
-                    ),
-                    child: Center(
-                      child: Text("Let’s Continue",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          )),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => authentication(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color(0xffe16b6b),
+                      ),
+                      child: Center(
+                        child: Text("Let’s Continue",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ),
                     ),
                   ),
                 ],
