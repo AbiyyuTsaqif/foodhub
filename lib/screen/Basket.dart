@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruithub/screen/Order.dart';
+import 'package:foodhub/screen/Order.dart';
 
 class Basket extends StatefulWidget {
   const Basket({super.key});

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fruithub/screen/Basket.dart';
-import 'package:palette_generator/palette_generator.dart';
+import 'package:foodhub/screen/Basket.dart';
 
 class home extends StatefulWidget {
   const home({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fruithub/screen/TrackOrder.dart';
-import 'package:fruithub/screen/home.dart';
+import 'package:foodhub/screen/TrackOrder.dart';
+import 'package:foodhub/screen/home.dart';
 
 class Order extends StatefulWidget {
   @override

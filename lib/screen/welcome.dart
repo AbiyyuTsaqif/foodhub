@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruithub/screen/authentication.dart';
+import 'package:foodhub/screen/authentication.dart';
 
 class welcome extends StatefulWidget {
   const welcome({super.key});

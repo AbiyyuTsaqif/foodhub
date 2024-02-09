@@ -1,4 +1,4 @@
-# fruithub
+# Foodhub
 
 A new Flutter project.
 
